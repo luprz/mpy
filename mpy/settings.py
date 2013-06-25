@@ -51,7 +51,7 @@ USE_TZ = True
 
 # Absolute filesystem path to the directory that will hold user-uploaded files.
 # Example: "/var/www/example.com/media/"
-MEDIA_ROOT = os.path.join(RUTA_PROYECTO,'carga')
+MEDIA_ROOT = os.path.join(RUTA_PROYECTO,'uploads')
 
 # URL that handles the media served from MEDIA_ROOT. Make sure to use a
 # trailing slash.
@@ -126,10 +126,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-     'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-     'django.contrib.admindocs',     
-     'django_cleanup',
+    'django.contrib.admindocs',         
+    'mpy.apps.home', 
+    'django_cleanup',
 )
 
 # A sample logging configuration. The only tangible logging
